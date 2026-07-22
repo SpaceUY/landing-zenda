@@ -61,7 +61,7 @@ const allies = [
         alt="Cambio Maiorano"
         width={153}
         height={30}
-        className={logoClass}
+        className={`${logoClass} -translate-y-[9.5px]`}
       />
     ),
   },
