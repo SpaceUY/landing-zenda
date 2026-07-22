@@ -59,8 +59,8 @@ const allies = [
       <Image
         src="/logos/maiorano.png"
         alt="Cambio Maiorano"
-        width={235}
-        height={46}
+        width={219}
+        height={16}
         className={logoClass}
       />
     ),
