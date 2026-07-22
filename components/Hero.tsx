@@ -13,7 +13,7 @@ const allies = [
         alt="Red Pagos"
         width={117}
         height={39}
-        className={logoClass}
+        className={`${logoClass} translate-y-[6.9px]`}
       />
     ),
   },
@@ -37,7 +37,7 @@ const allies = [
         alt="Fucerep Coop."
         width={95}
         height={34}
-        className={logoClass}
+        className={`${logoClass} translate-y-[5.3px]`}
       />
     ),
   },
