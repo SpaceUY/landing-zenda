@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 const benefits = [
   {
@@ -18,10 +19,28 @@ const benefits = [
   },
 ];
 
+function Coin({ className }: { className: string }) {
+  return (
+    <Image
+      src="/img/coin-usdt.png"
+      alt=""
+      width={740}
+      height={740}
+      aria-hidden
+      className={`pointer-events-none absolute drop-shadow-xl ${className}`}
+    />
+  );
+}
+
 export default function UsdtBenefits() {
   return (
-    <section className="bg-brand-deep text-white">
-      <div className="mx-auto max-w-6xl px-6 py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-brand-deep text-white">
+      <Coin className="animate-floaty -left-10 top-6 w-20 opacity-95 sm:w-28" />
+      <Coin className="-right-8 top-16 w-16 rotate-12 opacity-70 sm:w-24" />
+      <Coin className="animate-floaty bottom-10 left-[6%] w-14 -rotate-6 opacity-55 sm:w-20" />
+      <Coin className="-right-10 bottom-0 w-28 rotate-6 opacity-90 sm:w-40" />
+
+      <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-28">
         <h2 className="text-center font-display text-3xl font-semibold tracking-tight sm:text-[40px]">
           Conocé los beneficios de USDT
         </h2>
@@ -31,25 +50,24 @@ export default function UsdtBenefits() {
         </p>
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {benefits.map((b) => (
-            <article
-              key={b.title}
-              className="rounded-[var(--radius-card)] border border-white/15 p-8"
-            >
-              <Image
-                src={b.icon}
-                alt=""
-                width={72}
-                height={72}
-                className="h-16 w-16 object-contain"
-              />
-              <h3 className="mt-6 font-display text-lg font-semibold">
-                {b.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/70">
-                {b.body}
-              </p>
-            </article>
+          {benefits.map((b, i) => (
+            <Reveal key={b.title} delay={i * 100}>
+              <article className="rounded-[var(--radius-card)] border border-white/15 bg-brand-deep/60 p-8 backdrop-blur-sm">
+                <Image
+                  src={b.icon}
+                  alt=""
+                  width={72}
+                  height={72}
+                  className="h-16 w-16 object-contain"
+                />
+                <h3 className="mt-6 font-display text-lg font-semibold">
+                  {b.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/70">
+                  {b.body}
+                </p>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

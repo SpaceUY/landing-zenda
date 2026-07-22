@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import InternationalCard from "@/components/InternationalCard";
 import UsdtBenefits from "@/components/UsdtBenefits";
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <InternationalCard />
       <UsdtBenefits />
+      <HowItWorks />
       <Faq />
       <Footer />
     </main>

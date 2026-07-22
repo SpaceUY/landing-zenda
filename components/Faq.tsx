@@ -16,8 +16,12 @@ const items = [
     a: "Creá tu cuenta, elegí cuánto querés cambiar y confirmá la operación. Además, recibís 10 USDT de regalo en tu primera transacción.",
   },
   {
+    q: "¿Qué métodos de pago puedo usar?",
+    a: "Podés operar con transferencia bancaria, Mercado Pago o efectivo en cualquier local de Red Pagos. Elegís el que te resulte más cómodo.",
+  },
+  {
     q: "¿Cuáles son las comisiones por operación?",
-    a: "La comisión es del 2% en todas tus operaciones. La promoción aplica únicamente para transacciones menores a USD 2000.",
+    a: "La comisión es del 3% en las compras y 0% en las ventas.",
   },
 ];
 

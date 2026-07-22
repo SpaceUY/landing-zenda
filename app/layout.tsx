@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Sora, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-0ZYLHML5PY";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -16,12 +19,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Zenda | La primera tarjeta crypto de Uruguay.",
-  description: "Todo lo que necesitás para operar crypto, en un solo lugar.",
+  title: "Zenda | La primera tarjeta cripto de Uruguay.",
+  description: "Todo lo que necesitás para operar cripto, en un solo lugar.",
   openGraph: {
-    title: "Zenda | La primera tarjeta crypto de Uruguay.",
-    description: "Todo lo que necesitás para operar crypto, en un solo lugar.",
+    title: "Zenda | La primera tarjeta cripto de Uruguay.",
+    description: "Todo lo que necesitás para operar cripto, en un solo lugar.",
     type: "website",
+  },
+  icons: {
+    icon: [
+      { url: "/icon-light.svg", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark.svg", media: "(prefers-color-scheme: dark)" },
+    ],
   },
 };
 
@@ -31,6 +40,18 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${sora.variable} ${inter.variable}`}>
       <body>{children}</body>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}');
+        `}
+      </Script>
     </html>
   );
 }
