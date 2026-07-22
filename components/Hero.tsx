@@ -102,27 +102,47 @@ export default function Hero() {
             Cambiá entre pesos, dólares y cripto. Comprá, invertí y ahorrá, con
             total seguridad.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href={APP_URL}
-              className="inline-flex rounded-lg bg-white px-5 py-3 text-sm font-medium text-ink transition-transform hover:scale-[1.02]"
-            >
-              Empezá a operar
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex transition-transform hover:scale-[1.02]"
-            >
-              <Image
-                src="/img/google-play-badge.png"
-                alt="Disponible en Google Play"
-                width={140}
-                height={54}
-                className="h-[54px] w-auto"
-              />
-            </a>
+          <div className="mt-8">
+            <p className="mb-3 text-xs font-medium uppercase tracking-wide text-white/60">
+              Empezá a operar desde:
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href={APP_URL}
+                className="inline-flex h-[54px] w-[170px] items-center justify-center gap-2 rounded-lg border border-white/40 text-sm font-medium text-white transition-colors hover:bg-white/10"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                Web App
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-[54px] items-center transition-transform hover:scale-[1.02]"
+              >
+                <Image
+                  src="/img/google-play-badge.png"
+                  alt="Disponible en Google Play"
+                  width={170}
+                  height={54}
+                  className="h-full w-auto"
+                />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -147,7 +167,7 @@ export default function Hero() {
             Nuestros aliados
           </p>
           <div
-            className="mx-auto mt-6 max-w-3xl overflow-hidden"
+            className="mx-auto mt-6 max-w-3xl overflow-hidden py-3"
             style={{
               maskImage:
                 "linear-gradient(to right, transparent 0%, black 22%, black 78%, transparent 100%)",
