@@ -102,12 +102,28 @@ export default function Hero() {
             Cambiá entre pesos, dólares y cripto. Comprá, invertí y ahorrá, con
             total seguridad.
           </p>
-          <a
-            href={APP_URL}
-            className="mt-8 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-medium text-ink transition-transform hover:scale-[1.02]"
-          >
-            Empezá a operar
-          </a>
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href={APP_URL}
+              className="inline-flex rounded-lg bg-white px-5 py-3 text-sm font-medium text-ink transition-transform hover:scale-[1.02]"
+            >
+              Empezá a operar
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex transition-transform hover:scale-[1.02]"
+            >
+              <Image
+                src="/img/google-play-badge.png"
+                alt="Disponible en Google Play"
+                width={140}
+                height={54}
+                className="h-[54px] w-auto"
+              />
+            </a>
+          </div>
         </div>
 
         {/* Illustration — hidden below lg, the screenshot is illegible at mobile widths */}
