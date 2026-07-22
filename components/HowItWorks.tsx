@@ -81,11 +81,11 @@ export default function HowItWorks() {
               <div key={s.n}>
                 <Reveal delay={i * 100}>
                   <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
-                    <div className={`min-w-0 ${cardFirst ? "lg:order-1" : "lg:order-2"}`}>
+                    <div className={`order-2 min-w-0 ${cardFirst ? "lg:order-1" : "lg:order-2"}`}>
                       <StepCard img={s.img} title={s.title} />
                     </div>
                     <div
-                      className={`min-w-0 text-center lg:text-left ${cardFirst ? "lg:order-2" : "lg:order-1"}`}
+                      className={`order-1 min-w-0 text-center lg:text-left ${cardFirst ? "lg:order-2" : "lg:order-1"}`}
                     >
                       <span className="text-xs font-semibold uppercase tracking-wide text-brand">
                         Paso {s.n}
