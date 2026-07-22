@@ -106,14 +106,14 @@ export default function Hero() {
             <p className="mb-3 text-xs font-medium uppercase tracking-wide text-white/60">
               Empezá a operar desde:
             </p>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-2.5 sm:gap-4">
               <a
                 href={APP_URL}
-                className="inline-flex h-[54px] w-[170px] items-center justify-center gap-2 rounded-lg border border-white/40 text-sm font-medium text-white transition-colors hover:bg-white/10"
+                className="inline-flex h-11 w-[128px] shrink-0 items-center justify-center gap-1.5 rounded-lg border border-white/40 text-xs font-medium text-white transition-colors hover:bg-white/10 sm:h-[54px] sm:w-[170px] sm:gap-2 sm:text-sm"
               >
                 <svg
-                  width="16"
-                  height="16"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -121,6 +121,7 @@ export default function Hero() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   aria-hidden
+                  className="shrink-0 sm:h-4 sm:w-4"
                 >
                   <circle cx="12" cy="12" r="10" />
                   <line x1="2" y1="12" x2="22" y2="12" />
@@ -132,7 +133,7 @@ export default function Hero() {
                 href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-[54px] w-[170px] items-center justify-center transition-transform hover:scale-[1.02]"
+                className="inline-flex h-11 w-[128px] shrink-0 items-center justify-center transition-transform hover:scale-[1.02] sm:h-[54px] sm:w-[170px]"
               >
                 <Image
                   src="/img/google-play-badge.png"
