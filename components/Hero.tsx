@@ -11,8 +11,8 @@ const allies = [
       <Image
         src="/logos/redpagos.svg"
         alt="Red Pagos"
-        width={122}
-        height={28}
+        width={113}
+        height={26}
         className={logoClass}
       />
     ),
@@ -23,8 +23,8 @@ const allies = [
       <Image
         src="/logos/midinero.svg"
         alt="Midinero"
-        width={135}
-        height={26}
+        width={114}
+        height={22}
         className={logoClass}
       />
     ),
@@ -35,8 +35,8 @@ const allies = [
       <Image
         src="/logos/fucerep.svg"
         alt="Fucerep Coop."
-        width={76}
-        height={27}
+        width={90}
+        height={32}
         className={logoClass}
       />
     ),
@@ -47,8 +47,8 @@ const allies = [
       <Image
         src="/logos/mercadopago.svg"
         alt="Mercado Pago"
-        width={138}
-        height={56}
+        width={178}
+        height={72}
         className={logoClass}
       />
     ),
@@ -56,7 +56,7 @@ const allies = [
   {
     name: "Cambio Maiorano",
     node: (
-      <span className="shrink-0 font-display text-[19px] font-semibold leading-none text-white">
+      <span className="shrink-0 font-display text-[21px] font-semibold leading-none text-white">
         Cambio Maiorano
       </span>
     ),
@@ -67,8 +67,8 @@ const allies = [
       <Image
         src="/logos/spacedev.png"
         alt="SpaceDev"
-        width={96}
-        height={27}
+        width={85}
+        height={24}
         className={logoClass}
       />
     ),
@@ -111,8 +111,9 @@ export default function Hero() {
           <Image
             src="/img/hero-dashboard.png"
             alt="Panel de Zenda en la web y en la app"
-            width={5984}
-            height={4155}
+            width={2400}
+            height={1666}
+            sizes="(min-width: 1024px) 700px, 0px"
             className="w-full drop-shadow-[0_35px_60px_rgba(0,0,0,0.45)]"
             priority
           />
