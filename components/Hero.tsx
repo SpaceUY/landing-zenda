@@ -132,14 +132,14 @@ export default function Hero() {
                 href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-[54px] items-center transition-transform hover:scale-[1.02]"
+                className="inline-flex h-[54px] w-[170px] items-center justify-center transition-transform hover:scale-[1.02]"
               >
                 <Image
                   src="/img/google-play-badge.png"
                   alt="Disponible en Google Play"
-                  width={170}
-                  height={54}
-                  className="h-full w-auto"
+                  width={646}
+                  height={192}
+                  className="h-full w-full object-contain"
                 />
               </a>
             </div>
