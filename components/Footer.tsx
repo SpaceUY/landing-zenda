@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useOpenPanel } from "@openpanel/nextjs";
 import Logo from "./Logo";
 import { submitForm } from "@/lib/web3forms";
 
@@ -47,6 +48,7 @@ export default function Footer() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { track } = useOpenPanel();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -54,6 +56,7 @@ export default function Footer() {
     setError(null);
     try {
       await submitForm(e.currentTarget);
+      track("newsletter_submit");
       setSent(true);
     } catch (err) {
       setError(
@@ -77,6 +80,8 @@ export default function Footer() {
             </p>
             <Link
               href="/empresas"
+              data-track="empresas_cta_click"
+              data-placement="footer"
               className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-ink px-4 py-2 text-xs font-semibold text-white transition-transform hover:scale-[1.03]"
             >
               Zenda para empresas

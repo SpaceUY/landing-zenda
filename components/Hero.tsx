@@ -109,6 +109,8 @@ export default function Hero() {
             <div className="flex items-center gap-2.5 sm:gap-4">
               <a
                 href={APP_URL}
+                data-track="app_cta_click"
+                data-placement="hero"
                 className="inline-flex h-11 w-[128px] shrink-0 items-center justify-center gap-1.5 rounded-lg border border-white/40 text-xs font-medium text-white transition-colors hover:bg-white/10 sm:h-[54px] sm:w-[170px] sm:gap-2 sm:text-sm"
               >
                 <svg
@@ -133,6 +135,8 @@ export default function Hero() {
                 href="https://play.google.com/store/apps/details?id=com.space.zenda&hl=es_AR"
                 target="_blank"
                 rel="noreferrer"
+                data-track="google_play_click"
+                data-placement="hero"
                 className="inline-flex h-11 w-[128px] shrink-0 items-center justify-center transition-transform hover:scale-[1.02] sm:h-[54px] sm:w-[170px]"
               >
                 <Image

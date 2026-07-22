@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useOpenPanel } from "@openpanel/nextjs";
 import { submitForm } from "@/lib/web3forms";
 
 const fields = [
@@ -13,6 +14,7 @@ export default function WaitlistForm() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { track } = useOpenPanel();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -20,6 +22,7 @@ export default function WaitlistForm() {
     setError(null);
     try {
       await submitForm(e.currentTarget);
+      track("waitlist_submit");
       setSent(true);
     } catch (err) {
       setError(

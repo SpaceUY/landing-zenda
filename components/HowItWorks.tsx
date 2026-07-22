@@ -112,6 +112,8 @@ export default function HowItWorks() {
         <div className="mt-16 flex justify-center">
           <a
             href={APP_URL}
+            data-track="app_cta_click"
+            data-placement="how_it_works"
             className="inline-flex rounded-lg bg-brand px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
           >
             Empezá a operar

@@ -151,6 +151,8 @@ export default function EmpresasPage() {
           </p>
           <a
             href="#contacto"
+            data-track="empresas_cta_click"
+            data-placement="empresas_hero"
             className="mt-8 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-medium text-ink transition-transform hover:scale-[1.02]"
           >
             Hablar con un especialista

@@ -19,12 +19,16 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <a
               href={APP_URL}
+              data-track="app_cta_click"
+              data-placement="header_login"
               className="hidden rounded-lg border border-white/40 px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-white/10 sm:inline-flex"
             >
               Iniciar sesión
             </a>
             <a
               href={APP_URL}
+              data-track="app_cta_click"
+              data-placement="header_cta"
               className="rounded-lg bg-white px-4 py-2 text-xs font-semibold text-ink transition-transform hover:scale-[1.03]"
             >
               Empezá a operar

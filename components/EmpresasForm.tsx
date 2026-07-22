@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useOpenPanel } from "@openpanel/nextjs";
 import { submitForm } from "@/lib/web3forms";
 
 const fields = [
@@ -14,6 +15,7 @@ export default function EmpresasForm() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { track } = useOpenPanel();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -21,6 +23,7 @@ export default function EmpresasForm() {
     setError(null);
     try {
       await submitForm(e.currentTarget);
+      track("empresas_submit");
       setSent(true);
     } catch (err) {
       setError(
