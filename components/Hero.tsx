@@ -9,10 +9,10 @@ const allies = [
     name: "Red Pagos",
     node: (
       <Image
-        src="/logos/redpagos.svg"
+        src="/logos/redpagos.png"
         alt="Red Pagos"
-        width={113}
-        height={26}
+        width={117}
+        height={39}
         className={logoClass}
       />
     ),
@@ -21,10 +21,10 @@ const allies = [
     name: "Midinero",
     node: (
       <Image
-        src="/logos/midinero.svg"
+        src="/logos/midinero.png"
         alt="Midinero"
-        width={114}
-        height={22}
+        width={126}
+        height={25}
         className={logoClass}
       />
     ),
@@ -35,8 +35,8 @@ const allies = [
       <Image
         src="/logos/fucerep.svg"
         alt="Fucerep Coop."
-        width={90}
-        height={32}
+        width={95}
+        height={34}
         className={logoClass}
       />
     ),
@@ -45,10 +45,10 @@ const allies = [
     name: "Mercado Pago",
     node: (
       <Image
-        src="/logos/mercadopago.svg"
+        src="/logos/mercadopago.png"
         alt="Mercado Pago"
-        width={178}
-        height={72}
+        width={94}
+        height={25}
         className={logoClass}
       />
     ),
@@ -56,9 +56,13 @@ const allies = [
   {
     name: "Cambio Maiorano",
     node: (
-      <span className="shrink-0 font-display text-[21px] font-semibold leading-none text-white">
-        Cambio Maiorano
-      </span>
+      <Image
+        src="/logos/maiorano.png"
+        alt="Cambio Maiorano"
+        width={337}
+        height={66}
+        className={logoClass}
+      />
     ),
   },
   {
@@ -67,7 +71,7 @@ const allies = [
       <Image
         src="/logos/spacedev.png"
         alt="SpaceDev"
-        width={85}
+        width={84}
         height={24}
         className={logoClass}
       />
