@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useOpenPanel } from "@openpanel/nextjs";
 import Logo from "./Logo";
-import { submitForm } from "@/lib/web3forms";
+import { formToPayload, submitLanding } from "@/lib/landing-api";
 
 const socials = [
   {
@@ -55,7 +55,7 @@ export default function Footer() {
     setSending(true);
     setError(null);
     try {
-      await submitForm(e.currentTarget);
+      await submitLanding("newsletter", formToPayload(e.currentTarget));
       track("newsletter_submit");
       setSent(true);
     } catch (err) {
@@ -113,14 +113,12 @@ export default function Footer() {
               </p>
             ) : (
               <form onSubmit={handleSubmit} className="mt-3">
-                <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
-                <input type="hidden" name="subject" value="Zenda — Nuevo suscriptor al newsletter" />
-                <input type="hidden" name="from_name" value="Zenda.cash" />
                 <div className="flex gap-2">
                   <input
                     type="email"
                     name="email"
                     required
+                    maxLength={255}
                     placeholder="tu@email.com"
                     aria-label="Email"
                     className="w-full rounded-lg border border-ink/15 bg-white/60 px-3.5 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink/40 focus:border-ink/40"

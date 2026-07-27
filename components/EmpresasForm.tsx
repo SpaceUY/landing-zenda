@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { useOpenPanel } from "@openpanel/nextjs";
-import { submitForm } from "@/lib/web3forms";
+import { formToPayload, submitLanding } from "@/lib/landing-api";
 
 const fields = [
-  { name: "nombre", label: "Nombre y apellido", type: "text", ph: "Lionel Messi" },
-  { name: "empresa", label: "Empresa", type: "text", ph: "Mi Empresa S.A." },
-  { name: "email", label: "Email", type: "email", ph: "lionel@miempresa.com" },
-  { name: "telefono", label: "Teléfono", type: "tel", ph: "+598 1234 5678" },
+  { name: "name", label: "Nombre y apellido", type: "text", ph: "Lionel Messi", maxLength: 255 },
+  { name: "company", label: "Empresa", type: "text", ph: "Mi Empresa S.A.", maxLength: 255 },
+  { name: "email", label: "Email", type: "email", ph: "lionel@miempresa.com", maxLength: 255 },
+  { name: "phone", label: "Teléfono", type: "tel", ph: "+598 1234 5678", maxLength: 30 },
 ] as const;
 
 export default function EmpresasForm() {
@@ -22,7 +22,7 @@ export default function EmpresasForm() {
     setSending(true);
     setError(null);
     try {
-      await submitForm(e.currentTarget);
+      await submitLanding("contact-empresas", formToPayload(e.currentTarget));
       track("empresas_submit");
       setSent(true);
     } catch (err) {
@@ -52,9 +52,6 @@ export default function EmpresasForm() {
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
-          <input type="hidden" name="subject" value="Zenda — Contacto Empresas" />
-          <input type="hidden" name="from_name" value="Zenda.cash" />
           {fields.map((f) => (
             <div key={f.name}>
               <label
@@ -68,6 +65,7 @@ export default function EmpresasForm() {
                 name={f.name}
                 type={f.type}
                 required
+                maxLength={f.maxLength}
                 placeholder={f.ph}
                 className="w-full rounded-lg border border-black/10 bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-accent"
               />
@@ -75,14 +73,14 @@ export default function EmpresasForm() {
           ))}
           <div>
             <label
-              htmlFor="mensaje"
+              htmlFor="message"
               className="mb-1.5 block text-xs font-medium text-ink"
             >
               Contanos sobre tu operativa
             </label>
             <textarea
-              id="mensaje"
-              name="mensaje"
+              id="message"
+              name="message"
               rows={3}
               placeholder="Importación, exportación, remesas, volumen mensual estimado..."
               className="w-full resize-none rounded-lg border border-black/10 bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-accent"
