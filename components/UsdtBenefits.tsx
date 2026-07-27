@@ -51,8 +51,8 @@ export default function UsdtBenefits() {
 
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
           {benefits.map((b, i) => (
-            <Reveal key={b.title} delay={i * 100}>
-              <article className="rounded-[var(--radius-card)] border border-white/15 bg-brand-deep/60 p-8 backdrop-blur-sm">
+            <Reveal key={b.title} delay={i * 100} className="h-full">
+              <article className="h-full rounded-[var(--radius-card)] border border-white/15 bg-brand-deep/60 p-8 backdrop-blur-sm">
                 <Image
                   src={b.icon}
                   alt=""

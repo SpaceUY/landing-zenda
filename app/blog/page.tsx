@@ -40,13 +40,13 @@ export default function BlogPage() {
         <div className="mx-auto max-w-6xl px-6 py-16 lg:py-20">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {blogPosts.map((post, i) => (
-              <Reveal key={post.slug} delay={i * 100}>
+              <Reveal key={post.slug} delay={i * 100} className="h-full">
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group block overflow-hidden rounded-[var(--radius-card)] border border-black/5 bg-white transition-shadow hover:shadow-lg"
+                  className="group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-black/5 bg-white transition-shadow hover:shadow-lg"
                 >
-                  <PostCover cover={post.cover} className="h-40" />
-                  <div className="p-6">
+                  <PostCover cover={post.cover} className="h-40 shrink-0" />
+                  <div className="flex flex-1 flex-col p-6">
                     <div className="flex items-center gap-3 text-xs font-medium text-ink-muted">
                       <span className="text-brand">{post.category}</span>
                       <span aria-hidden>·</span>
@@ -58,7 +58,7 @@ export default function BlogPage() {
                     <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                       {post.excerpt}
                     </p>
-                    <p className="mt-4 text-xs font-medium text-ink-muted">
+                    <p className="mt-auto pt-4 text-xs font-medium text-ink-muted">
                       {post.readTime} de lectura
                     </p>
                   </div>
