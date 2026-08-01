@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Zenda para Empresas | Pagos internacionales con blockchain",
   description:
     "Soluciones de pagos internacionales basadas en blockchain para importadores, exportadores y operadores de remesas.",
+  alternates: { canonical: "/empresas" },
+  openGraph: {
+    title: "Zenda para Empresas | Pagos internacionales con blockchain",
+    description:
+      "Soluciones de pagos internacionales basadas en blockchain para importadores, exportadores y operadores de remesas.",
+    url: "/empresas",
+  },
 };
 
 function Icon({ children }: { children: ReactNode }) {

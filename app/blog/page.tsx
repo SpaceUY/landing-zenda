@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   title: "Blog | Zenda",
   description:
     "Novedades, guías y educación sobre cripto, USDT y pagos internacionales.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog | Zenda",
+    description:
+      "Novedades, guías y educación sobre cripto, USDT y pagos internacionales.",
+    url: "/blog",
+  },
 };
 
 export default function BlogPage() {

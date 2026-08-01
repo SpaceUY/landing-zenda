@@ -37,7 +37,7 @@ export default function Features() {
                 <div className="relative aspect-[9/5] w-full overflow-hidden border-b border-black/5">
                   <Image
                     src={card.img}
-                    alt=""
+                    alt={card.title}
                     fill
                     className="object-contain"
                   />

@@ -25,11 +25,28 @@ const items = [
   },
 ];
 
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
 export default function Faq() {
   const [open, setOpen] = useState(0);
 
   return (
     <section className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
       <div className="mx-auto max-w-3xl px-6 py-20 lg:py-28">
         <h2 className="text-center font-display text-3xl font-semibold tracking-tight text-ink sm:text-[40px]">
           Preguntas frecuentes

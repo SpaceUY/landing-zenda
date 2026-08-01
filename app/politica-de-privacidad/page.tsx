@@ -9,6 +9,7 @@ import { parseMarkdown } from "@/lib/markdown";
 export const metadata: Metadata = {
   title: "Política de Privacidad | Zenda",
   description: "Cómo Zenda recopila, utiliza y protege tus datos personales.",
+  alternates: { canonical: "/politica-de-privacidad" },
 };
 
 export default function PrivacyPolicyPage() {

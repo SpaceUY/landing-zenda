@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PostCover from "@/components/PostCover";
 import { blogPosts, getPostBySlug, formatPostDate } from "@/lib/blog-posts";
 import { parseMarkdown } from "@/lib/markdown";
+import { SITE_URL } from "@/lib/constants";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -22,6 +23,14 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Blog Zenda`,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${post.slug}`,
+      type: "article",
+      publishedTime: post.date,
+    },
   };
 }
 
@@ -34,8 +43,26 @@ export default async function BlogPostPage({
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { "@type": "Organization", name: "Zenda" },
+    publisher: { "@type": "Organization", name: "Zenda" },
+    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleStructuredData),
+        }}
+      />
       <section className="relative overflow-hidden bg-brand text-white">
         <div className="absolute inset-0 bg-hero-glow opacity-40" aria-hidden />
         <div
