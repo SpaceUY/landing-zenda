@@ -2,13 +2,14 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Zenda | La primera tarjeta cripto de Uruguay";
+export const alt =
+  "Zenda — Todo lo que necesitás para operar cripto, en un solo lugar.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
   const markSvg = await readFile(
-    join(process.cwd(), "public/icon-light.svg"),
+    join(process.cwd(), "public/img/logo-mark.svg"),
     "utf-8",
   );
   const markSrc = `data:image/svg+xml;base64,${Buffer.from(markSvg).toString("base64")}`;
@@ -28,7 +29,7 @@ export default async function Image() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={markSrc} width={44} height={44} alt="" />
+          <img src={markSrc} width={25} height={44} alt="" />
           <span
             style={{
               fontSize: 40,
@@ -58,11 +59,14 @@ export default async function Image() {
           style={{
             marginTop: 32,
             display: "flex",
+            maxWidth: 880,
             fontSize: 28,
+            lineHeight: 1.4,
             color: "rgba(255,255,255,0.75)",
           }}
         >
-          La primera tarjeta cripto de Uruguay
+          Cambiá entre pesos, dólares y cripto. Comprá, invertí y ahorrá, con
+          total seguridad.
         </div>
       </div>
     ),
