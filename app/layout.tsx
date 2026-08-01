@@ -23,7 +23,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Zenda | La primera tarjeta cripto de Uruguay.",
+    default: "Zenda | Operá USDT desde Uruguay",
     template: "%s | Zenda",
   },
   description: "Todo lo que necesitás para operar cripto, en un solo lugar.",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Zenda | La primera tarjeta cripto de Uruguay.",
+    title: "Zenda | Operá USDT desde Uruguay",
     description: "Todo lo que necesitás para operar cripto, en un solo lugar.",
     url: SITE_URL,
     siteName: "Zenda",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zenda | La primera tarjeta cripto de Uruguay.",
+    title: "Zenda | Operá USDT desde Uruguay",
     description: "Todo lo que necesitás para operar cripto, en un solo lugar.",
   },
   icons: {
