@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { BlogPost } from "@/lib/blog-posts";
 
 const styles: Record<BlogPost["cover"], string> = {
@@ -26,11 +27,29 @@ const icons: Record<BlogPost["cover"], React.ReactNode> = {
 
 export default function PostCover({
   cover,
+  coverImage,
+  title,
   className = "",
 }: {
   cover: BlogPost["cover"];
+  coverImage?: string;
+  title?: string;
   className?: string;
 }) {
+  if (coverImage) {
+    return (
+      <div className={`relative overflow-hidden ${className}`}>
+        <Image
+          src={coverImage}
+          alt={title ?? ""}
+          fill
+          sizes="(min-width: 1024px) 720px, 100vw"
+          className="object-cover"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`relative flex items-center justify-center overflow-hidden ${styles[cover]} ${className}`}

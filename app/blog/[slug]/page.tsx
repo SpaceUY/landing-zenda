@@ -93,7 +93,9 @@ export default async function BlogPostPage({
         <div className="mx-auto max-w-3xl px-6">
           <PostCover
             cover={post.cover}
-            className="-mt-10 h-56 rounded-[var(--radius-card)] shadow-xl sm:h-72"
+            coverImage={post.coverImage}
+            title={post.title}
+            className="-mt-10 aspect-[16/9] rounded-[var(--radius-card)] shadow-xl"
           />
         </div>
 

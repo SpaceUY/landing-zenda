@@ -52,7 +52,12 @@ export default function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="group flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-black/5 bg-white transition-shadow hover:shadow-lg"
                 >
-                  <PostCover cover={post.cover} className="h-40 shrink-0" />
+                  <PostCover
+                    cover={post.cover}
+                    coverImage={post.coverImage}
+                    title={post.title}
+                    className="aspect-[16/9] shrink-0"
+                  />
                   <div className="flex flex-1 flex-col p-6">
                     <div className="flex items-center gap-3 text-xs font-medium text-ink-muted">
                       <span className="text-brand">{post.category}</span>

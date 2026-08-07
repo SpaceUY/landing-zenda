@@ -6,6 +6,7 @@ export type BlogPost = {
   readTime: string;
   category: string;
   cover: "brand" | "deep" | "mint";
+  coverImage?: string;
   content: string;
 };
 
@@ -19,6 +20,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min",
     category: "Educación",
     cover: "brand",
+    coverImage: "/img/blog/que-es-usdt-y-por-que-conviene-en-uruguay.png",
     content: `# Qué es USDT
 
 USDT (Tether) es una stablecoin: una criptomoneda diseñada para mantener siempre una paridad 1 a 1 con el dólar estadounidense. A diferencia de Bitcoin o Ethereum, su valor no fluctúa con el mercado, lo que la convierte en una herramienta simple para ahorrar y operar sin exponerte a la volatilidad típica de las criptomonedas.
@@ -46,6 +48,7 @@ Con Zenda podés comprar USDT en simples pasos, depositando por Red Pagos, Merca
     readTime: "4 min",
     category: "Guías",
     cover: "mint",
+    coverImage: "/img/blog/como-comprar-tu-primera-cripto-en-5-minutos.png",
     content: `# Antes de empezar
 
 Comprar tu primera criptomoneda puede sonar intimidante, pero con Zenda es un proceso de cinco pasos que no debería llevarte más de cinco minutos.
@@ -81,6 +84,7 @@ Revisá la comisión y la tasa de conversión, confirmá, y listo: tu saldo qued
     readTime: "3 min",
     category: "Novedades",
     cover: "deep",
+    coverImage: "/img/blog/zenda-lanza-pagos-internacionales-para-empresas.png",
     content: `# Una nueva forma de operar con el exterior
 
 Hoy lanzamos **Zenda para Empresas**, una solución de pagos internacionales basada en tecnología blockchain pensada para importadores, exportadores, empresas de comercio internacional y operadores de remesas.
@@ -109,6 +113,8 @@ Si tu empresa opera con el exterior, [hablá con nuestro equipo](/empresas#conta
     readTime: "6 min",
     category: "Guías",
     cover: "brand",
+    coverImage:
+      "/img/blog/como-cobrar-del-exterior-en-uruguay-sin-perder-en-comisiones.png",
     content: `Cada vez más uruguayos trabajan con clientes de afuera. Programadores, diseñadores, consultores, agencias y empresas que facturan en dólares y después tienen que traer esa plata a Uruguay. El trabajo está, el cliente paga, pero cuando el dinero llega hay un problema que nadie te cuenta al principio: entre comisiones, tipos de cambio poco claros y demoras, una parte de lo que ganaste se queda en el camino.
 
 Si alguna vez recibiste un pago del exterior y sentiste que llegó menos de lo que esperabas, no fue tu imaginación. En esta guía repasamos las formas que existen hoy para cobrar desde afuera en Uruguay, qué costos tiene cada una y cómo evitar perder plata sin darte cuenta.
