@@ -10,7 +10,7 @@ export type BlogPost = {
   content: string;
 };
 
-export const blogPosts: BlogPost[] = [
+const rawBlogPosts: BlogPost[] = [
   {
     slug: "que-es-usdt-y-por-que-conviene-en-uruguay",
     title: "Qué es USDT y por qué conviene en Uruguay",
@@ -177,13 +177,18 @@ Si cobrás seguido, de clientes distintos, y querés que el dinero llegue rápid
 
 Y si lo que buscás es guardar parte de lo que cobrás en dólares, sin pasarlo a pesos enseguida, los dólares digitales te permiten hacerlo sin tener el billete físico y sin dejarlo parado en una cuenta bancaria.
 
-# En resumen
+---
 
 Cobrar del exterior en Uruguay no tiene por qué significar perder una parte de lo que ganaste. La clave está en entender dónde se va la plata (comisiones, tipo de cambio y tiempo) y elegir la forma que menos te haga perder según cómo trabajás.
 
 Los dólares digitales se volvieron una alternativa concreta para quienes cobran de afuera de forma habitual, porque combinan velocidad con la posibilidad de pasar a pesos sin comisión. Si querés empezar a cobrar así, en Zenda podés hacerlo de forma simple y segura, desde Uruguay.`,
   },
 ];
+
+// Newest first, everywhere blogPosts is consumed (index, sitemap, etc).
+export const blogPosts = [...rawBlogPosts].sort((a, b) =>
+  b.date.localeCompare(a.date),
+);
 
 export function getPostBySlug(slug: string) {
   return blogPosts.find((p) => p.slug === slug);

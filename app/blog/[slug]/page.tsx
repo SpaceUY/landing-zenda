@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import PostCover from "@/components/PostCover";
 import { blogPosts, getPostBySlug, formatPostDate } from "@/lib/blog-posts";
 import { parseMarkdown } from "@/lib/markdown";
-import { SITE_URL } from "@/lib/constants";
+import { APP_URL, SITE_URL } from "@/lib/constants";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -99,9 +99,29 @@ export default async function BlogPostPage({
           />
         </div>
 
-        <article className="mx-auto max-w-2xl space-y-4 px-6 py-16 text-[15px] text-ink-muted lg:py-20">
+        <article className="mx-auto max-w-2xl space-y-4 px-6 pt-16 text-[15px] text-ink-muted lg:pt-20">
           {parseMarkdown(post.content)}
         </article>
+
+        <div className="mx-auto max-w-2xl px-6 py-16 lg:py-20">
+          <div className="rounded-[var(--radius-card)] bg-surface p-8 text-center">
+            <p className="font-display text-xl font-semibold text-ink">
+              Empezá a operar cripto hoy
+            </p>
+            <p className="mx-auto mt-2 max-w-sm text-sm text-ink-muted">
+              Creá tu cuenta en minutos y operá con USDT de forma simple y
+              segura, desde Uruguay.
+            </p>
+            <a
+              href={APP_URL}
+              data-track="app_cta_click"
+              data-placement="blog_post"
+              className="mt-5 inline-flex rounded-lg bg-brand px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+            >
+              Empezá a operar
+            </a>
+          </div>
+        </div>
       </section>
 
       <Footer />

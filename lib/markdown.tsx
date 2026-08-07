@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 // Minimal parser for the small markdown subset used in our content docs:
-// "# " / "## " headings, "* " bullet lists, inline **bold** / *italic*, and [text](url) links.
+// "# " / "## " headings, "* " bullet lists, "---" horizontal rules,
+// inline **bold** / *italic*, and [text](url) links.
 function renderInline(text: string, key: string): ReactNode {
   const clean = text.replace(/\\\./g, ".");
   const parts: ReactNode[] = [];
@@ -58,7 +59,11 @@ export function parseMarkdown(raw: string): ReactNode[] {
       flushList();
       continue;
     }
-    if (line.startsWith("## ")) {
+    if (line === "---") {
+      flushList();
+      const id = key++;
+      blocks.push(<hr key={`hr-${id}`} className="my-10 border-t border-black/10" />);
+    } else if (line.startsWith("## ")) {
       flushList();
       const id = key++;
       blocks.push(
