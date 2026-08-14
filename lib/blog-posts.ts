@@ -183,6 +183,77 @@ Cobrar del exterior en Uruguay no tiene por qué significar perder una parte de 
 
 Los dólares digitales se volvieron una alternativa concreta para quienes cobran de afuera de forma habitual, porque combinan velocidad con la posibilidad de pasar a pesos sin comisión. Si querés empezar a cobrar así, en Zenda podés hacerlo de forma simple y segura, desde Uruguay.`,
   },
+  {
+    slug: "como-comprar-usdt-en-uruguay-pagando-con-red-pagos-o-mercado-pago",
+    title: "Cómo comprar USDT en Uruguay pagando con Red Pagos o Mercado Pago",
+    excerpt:
+      "Comprar dólares digitales en Uruguay es más simple de lo que pensás: pagando en pesos con Red Pagos, Mercado Pago o transferencia bancaria. Te contamos cómo, paso a paso.",
+    date: "2026-08-23",
+    readTime: "4 min",
+    category: "Guías",
+    cover: "mint",
+    coverImage:
+      "/img/blog/como-comprar-usdt-en-uruguay-pagando-con-red-pagos-o-mercado-pago.png",
+    content: `Comprar dólares digitales en Uruguay solía ser más complicado de lo necesario. Había que abrir cuenta en plataformas del exterior, mover dólares, entender términos en inglés y confiar en servicios que quedaban lejos. Hoy eso cambió: se puede comprar USDT desde Uruguay pagando en pesos, con los mismos métodos que ya usás todos los días.
+
+En esta guía te explicamos cómo comprar USDT usando Red Pagos, Mercado Pago o transferencia bancaria, paso a paso y sin vueltas.
+
+# Qué es USDT y por qué comprarlo
+
+USDT es una moneda digital que mantiene siempre el mismo valor que el dólar. Un USDT equivale a un dólar. A diferencia de otras criptomonedas como Bitcoin, no sube ni baja de precio, por eso se la llama stablecoin, o moneda estable.
+
+La gente en Uruguay lo usa por varias razones: para ahorrar en dólares sin tener el billete físico, para cobrar de clientes del exterior, para enviar dinero o simplemente para tener sus ahorros en una moneda estable y disponible las 24 horas.
+
+La ventaja de comprarlo desde una plataforma local es que podés pagar en pesos uruguayos, con métodos que ya conocés, y tener a quién recurrir si necesitás ayuda.
+
+# Los métodos de pago disponibles
+
+Una de las cosas que más frena a la gente al momento de comprar crypto es no saber cómo pagar. Con Zenda, tenés tres formas, todas en pesos uruguayos.
+
+* **Red Pagos**, para quienes prefieren o necesitan pagar en efectivo. Con más de dos mil puntos en todo el país, es una opción cómoda para quien no quiere operar con tarjeta ni cuenta bancaria.
+* **Mercado Pago**, para pagar de forma rápida y online desde una plataforma que la mayoría ya tiene y usa.
+* **Transferencia bancaria**, desde cualquier banco, para quien prefiere operar directamente desde su cuenta.
+
+En todos los casos, la acreditación queda en el día.
+
+# Cómo comprar USDT paso a paso
+
+El proceso es simple y no requiere conocimientos técnicos. Estos son los pasos.
+
+## 1. Creá tu cuenta
+
+Registrate en zenda.cash con tu correo. Es gratis y toma unos minutos. Para poder operar vas a necesitar verificar tu identidad, un paso que se hace 100% online y que existe para proteger tu cuenta y cumplir con la normativa uruguaya.
+
+## 2. Ingresá pesos con el método que prefieras
+
+Una vez verificada tu cuenta, cargás saldo en pesos. Acá elegís cómo:
+
+* Si pagás con Red Pagos, generás la orden desde la plataforma y la abonás en efectivo en cualquier local de Red Pagos del país.
+* Si pagás con Mercado Pago, completás el pago de forma online en el momento.
+* Si preferís transferencia bancaria, hacés la transferencia desde tu banco.
+
+Con cualquiera de las tres opciones, el dinero se acredita en el día.
+
+## 3. Comprá tus USDT
+
+Con el saldo en tu cuenta, comprás USDT al tipo de cambio del día. La operación se realiza al instante y los USDT quedan disponibles en tu cuenta para que los uses como quieras: guardarlos como reserva en dólares, enviarlos a otra wallet o venderlos cuando necesites pesos.
+
+# Cuánto cuesta comprar USDT
+
+Es importante entender los costos antes de operar, para que no haya sorpresas.
+
+En Zenda, la compra de USDT tiene una **comisión del 3%**, y se realiza al tipo de cambio del día. Es decir, sabés de antemano cuánto vas a pagar y a qué valor estás comprando.
+
+Un dato a tener en cuenta: la venta de USDT, es decir cuando pasás tus dólares digitales de vuelta a pesos, **no tiene comisión**. Se hace también al tipo de cambio del día, con 0% de costo. Esto es útil si en algún momento necesitás liquidez en moneda local.
+
+# Por qué elegir una plataforma local
+
+Comprar USDT desde una plataforma uruguaya tiene ventajas concretas frente a usar servicios del exterior o comprar de forma informal.
+
+Podés pagar en pesos con métodos locales, sin tener que conseguir dólares antes ni operar con monedas extranjeras. Tenés soporte en español y una empresa con presencia en Uruguay, con respaldo de Red Pagos. Y operás dentro del marco de la normativa local, lo que da tranquilidad y seguridad en cada operación.
+
+Frente a comprar de forma informal, a través de contactos o grupos, una plataforma te da algo que esos canales no pueden: transparencia en el precio, comprobante de cada operación y alguien a quien recurrir si algo no sale como esperabas.`,
+  },
 ];
 
 // Newest first, everywhere blogPosts is consumed (index, sitemap, etc).
