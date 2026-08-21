@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora, Inter } from "next/font/google";
 import Script from "next/script";
 import { OpenPanelComponent } from "@openpanel/nextjs";
+import PromoBanner from "@/components/PromoBanner";
 import { OPENPANEL_API_URL, SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
@@ -83,6 +84,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <PromoBanner />
         {children}
       </body>
       <Script
