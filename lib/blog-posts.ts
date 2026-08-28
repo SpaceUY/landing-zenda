@@ -254,6 +254,45 @@ Podés pagar en pesos con métodos locales, sin tener que conseguir dólares ant
 
 Frente a comprar de forma informal, a través de contactos o grupos, una plataforma te da algo que esos canales no pueden: transparencia en el precio, comprobante de cada operación y alguien a quien recurrir si algo no sale como esperabas.`,
   },
+  {
+    slug: "que-es-el-kyc-y-por-que-te-lo-piden",
+    title: "Qué es el KYC y por qué las plataformas financieras te lo piden",
+    excerpt:
+      "Si abriste una cuenta en un banco digital o una plataforma cripto, seguro te pidieron una foto de tu documento y una selfie. Te contamos qué es el KYC y por qué te protege.",
+    date: "2026-08-28",
+    readTime: "3 min",
+    category: "Educación",
+    cover: "deep",
+    coverImage: "/img/blog/que-es-el-kyc-y-por-que-te-lo-piden.png",
+    content: `# Qué significa KYC
+
+KYC son las siglas de "Know Your Customer", que en español se traduce como "conocé a tu cliente". Es el proceso que usan bancos, fintech y plataformas financieras para confirmar que una persona es realmente quien dice ser.
+
+No es exclusivo de las criptomonedas ni de una plataforma en particular. Lo pide cualquier entidad financiera seria del mundo, desde un banco tradicional hasta la fintech más nueva.
+
+## Por qué existe
+
+El KYC te protege a vos y protege al sistema en su conjunto. Sirve para evitar que alguien use tu identidad con datos robados, para prevenir el fraude y el lavado de dinero, y para mantener la plataforma segura para todos los que operan en ella.
+
+Además, es una exigencia de la normativa. Las plataformas que operan con dinero o activos digitales están obligadas por ley a verificar la identidad de sus usuarios. En Uruguay, las plataformas que operan con activos virtuales deben cumplir con la normativa vigente, y el KYC es parte de ese cumplimiento.
+
+## Qué te piden
+
+En la mayoría de las plataformas es un proceso simple y rápido. Lo habitual es que te pidan dos cosas:
+
+* **Tu documento de identidad**, para confirmar tus datos.
+* **Una selfie**, para comprobar que quien abre la cuenta coincide con el documento presentado.
+
+Todo se hace de forma online, desde el teléfono, y suele completarse en pocos minutos. No hay que ir a ninguna oficina ni presentar papeles físicos.
+
+## Es normal tener dudas
+
+Entregar tu documento y una foto puede generar cierta desconfianza, y es entendible. Pero las plataformas que piden KYC están obligadas a proteger esa información y a usarla únicamente para verificar tu identidad y cumplir con la normativa.
+
+De hecho, una plataforma que pide KYC suele ser más confiable que una que no lo hace. La ausencia de verificación puede parecer más cómoda, pero también es señal de que esa plataforma opera fuera del marco regulatorio, lo que implica más riesgos para vos.
+
+**El KYC es el proceso por el cual las plataformas verifican que sos quien decís ser.** Existe para protegerte del robo de identidad, prevenir fraudes, cumplir con la normativa y mantener la plataforma segura. Aunque pueda parecer incómodo, es rápido, se hace desde el celular y forma parte del funcionamiento normal de cualquier entidad financiera seria.`,
+  },
 ];
 
 // Newest first, everywhere blogPosts is consumed (index, sitemap, etc).
