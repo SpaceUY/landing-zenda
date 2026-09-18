@@ -3,6 +3,7 @@ import { Sora, Inter } from "next/font/google";
 import Script from "next/script";
 import { OpenPanelComponent } from "@openpanel/nextjs";
 import PromoBanner from "@/components/PromoBanner";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { OPENPANEL_API_URL, SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
@@ -87,6 +88,7 @@ export default function RootLayout({
         />
         <PromoBanner />
         {children}
+        <WhatsAppButton />
       </body>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
