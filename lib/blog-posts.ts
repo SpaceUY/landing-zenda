@@ -438,6 +438,95 @@ No. Recibir USDT no tiene costo para vos: la comisión la paga quien envía.
 
 El TRX es el combustible de la red Tron: sin él, tus USDT no se mueven. Tener siempre entre 15 y 20 TRX en tu cuenta te asegura poder enviar cuando lo necesites, sin sorpresas. Y antes de tu próximo envío, repasá [cómo enviar USDT a otra wallet sin errores](/blog/como-enviar-usdt-a-otra-wallet-sin-errores) para elegir siempre la red correcta.`,
   },
+  {
+    slug: "como-enviar-usdt-de-zenda-a-binance",
+    title: "Cómo enviar tus USDT de Zenda a Binance u otro exchange",
+    excerpt:
+      "Compraste USDT en Zenda y querés usarlos en Binance, OKX, Bybit u otro exchange. Te explicamos paso a paso cómo hacer el envío de forma segura y sin errores de red.",
+    date: "2026-10-15",
+    readTime: "5 min",
+    category: "Guías",
+    cover: "mint",
+    coverImage: "/img/blog/como-enviar-usdt-de-zenda-a-binance.png",
+    content: `Comprar USDT en Zenda pagando en pesos o dólares es el primer paso. Pero muchas personas después quieren mover esos dólares digitales a un exchange internacional como Binance para operar, ahorrar o usar otros servicios.
+
+La buena noticia es que el envío lleva unos minutos y no necesita bancos ni intermediarios. En esta guía te mostramos cómo hacerlo paso a paso, usando Binance como ejemplo. El proceso es prácticamente igual para cualquier otro exchange.
+
+# Antes de empezar
+
+Revisá que tengas tres cosas listas:
+
+* **USDT en tu cuenta de Zenda.** Si todavía no tenés, podés [comprarlos con Red Pagos o Mercado Pago](/blog/como-comprar-usdt-en-uruguay-pagando-con-red-pagos-o-mercado-pago).
+* **Un poco de TRX en tu cuenta de Zenda**, para pagar la comisión de la red Tron. Con 15 a 20 TRX estás cubierto. Si no sabés qué es, leé [por qué necesitás TRX para enviar tus USDT](/blog/por-que-necesitas-trx-para-enviar-usdt-por-tron).
+* **Tu cuenta de Binance verificada**, para poder recibir depósitos.
+
+# Paso 1: Copiá tu dirección de depósito en Binance
+
+Primero necesitás saber a qué dirección enviar. Esa dirección la genera Binance.
+
+## 1. Entrá a Binance y buscá la opción de depositar
+
+Desde la app o la web, andá a **Billetera** y elegí **Depositar**. Cuando te pregunte, elegí depositar cripto.
+
+## 2. Elegí USDT
+
+Buscá USDT en la lista de monedas.
+
+## 3. Elegí la red Tron (TRC20)
+
+Este es el paso más importante. Binance te va a pedir que elijas la red: seleccioná **Tron (TRC20)**. Es la misma red que vas a usar desde Zenda para enviar.
+
+## 4. Copiá la dirección
+
+Binance te muestra una dirección que empieza con la letra **T**. Tocá el botón de copiar. Nunca la escribas a mano.
+
+# Paso 2: Enviá tus USDT desde Zenda
+
+Con la dirección copiada, volvé a Zenda.
+
+## 1. Elegí enviar USDT
+
+Entrá a tu cuenta de Zenda, seleccioná USDT y elegí la opción de enviar.
+
+## 2. Pegá la dirección de Binance
+
+Pegá la dirección que copiaste. Antes de seguir, compará los primeros y los últimos caracteres con los que muestra Binance, y también algunos del medio.
+
+## 3. Confirmá que la red sea Tron
+
+Verificá que el envío salga por la red **Tron**, la misma que elegiste en Binance. Si las dos redes no coinciden, el dinero puede perderse.
+
+## 4. Ingresá el monto
+
+Escribí cuántos USDT querés enviar. La comisión de red se paga en TRX, así que tus USDT llegan completos.
+
+## 5. Confirmá el envío
+
+Revisá todo una última vez (dirección, red y monto) y confirmá.
+
+# Paso 3: Esperá la acreditación
+
+En la red Tron los envíos suelen tardar entre uno y cinco minutos. Binance te avisa cuando los USDT llegan a tu billetera.
+
+Si pasaron más de 30 minutos y no los ves, revisá en Binance el historial de depósitos. Si sigue sin aparecer, escribinos con los datos del envío y te ayudamos a rastrearlo.
+
+# Consejos para enviar sin problemas
+
+* **Si es tu primer envío a Binance, hacé una prueba con un monto chico.** Cuando confirmes que llegó, mandá el resto.
+* **Algunos exchanges te pueden preguntar de dónde viene el depósito.** Si Binance te lo pide, indicá que proviene de otra plataforma o exchange y completá con "Zenda".
+* **Guardá la dirección como frecuente** si vas a enviar seguido, así evitás copiarla cada vez.
+* **No uses direcciones viejas.** Si cambiaste de cuenta o de exchange, copiá la dirección de nuevo.
+
+# ¿Y si uso otro exchange?
+
+El proceso es el mismo en OKX, Bybit, KuCoin o cualquier otra plataforma: buscás la opción de depositar USDT, elegís la red Tron (TRC20), copiás la dirección y la pegás en Zenda. Lo único que cambia es el nombre de los botones.
+
+La regla de oro se mantiene en todos los casos: **la red que elegís para recibir tiene que ser exactamente la misma que usás para enviar.**
+
+---
+
+Mover tus USDT de Zenda a Binance o a cualquier otro exchange es rápido y simple. Con TRX en tu cuenta para pagar la comisión, la dirección copiada y la red Tron elegida en los dos lados, el envío llega en minutos.`,
+  },
 ];
 
 // Newest first, everywhere blogPosts is consumed (index, sitemap, etc).
