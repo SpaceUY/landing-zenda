@@ -369,6 +369,75 @@ Por eso la prevención es la única herramienta real acá: revisar la red antes 
 
 Enviar USDT es una de las operaciones más simples que existen: sin formularios, sin días de espera, sin intermediarios. El único cuidado real que pide es prestar atención a dos cosas, la red y la dirección, antes de tocar confirmar. Con ese hábito, mover tus dólares digitales es tan seguro como rápido.`,
   },
+  {
+    slug: "por-que-necesitas-trx-para-enviar-usdt-por-tron",
+    title: "Por qué necesitás TRX para enviar tus USDT por Tron",
+    excerpt:
+      "¿Tenés USDT en tu cuenta pero no podés enviarlos?Probablemente te falte TRX. Te explicamos qué es, para qué sirve y cuánto necesitás para mover tus dólares digitales.",
+    date: "2026-10-11",
+    readTime: "4 min",
+    category: "Guías",
+    cover: "deep",
+    coverImage: "/img/blog/por-que-necesitas-trx-para-enviar-usdt-por-tron.png",
+    content: `Es una de las consultas más comunes que recibimos: "Tengo USDT en mi cuenta, quiero enviarlos a otra wallet o a un exchange, y no me deja". En la gran mayoría de los casos la respuesta es la misma: **para enviar USDT por la red Tron necesitás tener un poco de TRX en tu cuenta.**
+
+Puede sonar raro. Si lo que querés mover son USDT, ¿por qué te piden otra moneda? En esta guía te explicamos por qué pasa, cuánto TRX necesitás y cómo conseguirlo en Zenda.
+
+# Qué es TRX
+
+TRX es la moneda propia de la red Tron, la blockchain por la que viajan tus USDT cuando los enviás. Así como un auto necesita nafta para moverse por la ruta, cada operación en Tron necesita un poco de TRX para procesarse.
+
+Tus USDT son la carga. La red Tron es la ruta. Y el TRX es el combustible que hace que el envío llegue a destino.
+
+# Por qué hace falta para enviar USDT
+
+Cada vez que enviás USDT, la red Tron tiene que validar y registrar esa operación en la blockchain. Ese trabajo tiene un costo, que se llama comisión de red, y **se paga siempre en TRX, nunca en USDT**.
+
+Esto no es una regla de Zenda: funciona igual en cualquier wallet o plataforma que use la red Tron. Esa comisión no se la queda Zenda, se la lleva la propia red para procesar la transacción.
+
+Por eso, aunque tengas mil USDT en tu cuenta, si tu saldo de TRX está en cero no vas a poder completar el envío.
+
+# Cuánto TRX necesitás
+
+La comisión de cada envío no es fija. Depende sobre todo de la wallet que recibe:
+
+* **Si la dirección de destino ya recibió USDT antes** (por ejemplo, la dirección de depósito de un exchange), el envío suele costar alrededor de **7 TRX**.
+* **Si es una dirección nueva**, que nunca tuvo USDT, el costo sube a alrededor de **14 TRX**.
+
+Estos valores pueden cambiar, porque la red Tron ajusta sus parámetros cada tanto.
+
+**Nuestra recomendación: tené siempre entre 15 y 20 TRX en tu cuenta.** Con eso cubrís cualquier envío con margen, incluso si la dirección de destino es nueva. Si vas a hacer varios envíos, multiplicá según la cantidad.
+
+# Cómo conseguir TRX en Zenda
+
+Conseguir TRX es igual de simple que comprar USDT.
+
+## 1. Ingresá a tu cuenta
+
+Entrá a Zenda desde la app o la web.
+
+## 2. Comprá TRX
+
+Elegí TRX y comprá el monto que necesitás, pagando con Red Pagos, Mercado Pago o transferencia bancaria (en pesos o dólares, según el medio), igual que cuando comprás USDT. Con una compra chica alcanza para varios envíos.
+
+## 3. Listo para enviar
+
+Con TRX en tu saldo ya podés enviar tus USDT. La comisión de red se descuenta automáticamente de tu TRX al confirmar el envío, y tus USDT llegan completos a destino.
+
+# Preguntas frecuentes
+
+## ¿Pierdo el TRX que compré?
+
+Solo se usa la parte necesaria para pagar cada envío. El resto queda en tu cuenta para los próximos.
+
+## ¿Necesito TRX para recibir USDT?
+
+No. Recibir USDT no tiene costo para vos: la comisión la paga quien envía.
+
+---
+
+El TRX es el combustible de la red Tron: sin él, tus USDT no se mueven. Tener siempre entre 15 y 20 TRX en tu cuenta te asegura poder enviar cuando lo necesites, sin sorpresas. Y antes de tu próximo envío, repasá [cómo enviar USDT a otra wallet sin errores](/blog/como-enviar-usdt-a-otra-wallet-sin-errores) para elegir siempre la red correcta.`,
+  },
 ];
 
 // Newest first, everywhere blogPosts is consumed (index, sitemap, etc).
