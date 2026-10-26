@@ -1,5 +1,5 @@
 const WHATSAPP_URL =
-  "https://api.whatsapp.com/send/?phone=59898143353&text=Hola%2C+necesito+ayuda&type=phone_number&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=59896995515&text=Hola%2C+necesito+ayuda&type=phone_number&app_absent=0";
 
 export default function WhatsAppButton() {
   return (
